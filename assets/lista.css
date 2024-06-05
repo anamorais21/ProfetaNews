@@ -1,0 +1,38 @@
+.usandoAPI {
+  text-align: center;
+}
+#veja {
+  font-weight: bolder;
+  margin-top: 60px;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+}
+#fill_list {
+  padding-top: 10px;
+  text-align: center;
+  list-style: none;
+  font-size: 25px;
+}
+
+#geraLista {
+  font-size: 1.2em;
+  background: black;
+  border: 0;
+  margin-bottom: 20px;
+  color: white;
+  padding: 0.2em 0.6em;
+  box-shadow: 2px 2px 2px black;
+  text-shadow: 1px 1px 1px black;
+}
+
+#geraLista:hover {
+  background: grey;
+  box-shadow: inset 2px 2px 2px white;
+  text-shadow: none;
+}
+
+#fill_list2 {
+  list-style: none;
+  text-align: center;
+  font-size: 25px;
+}

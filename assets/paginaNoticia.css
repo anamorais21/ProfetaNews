@@ -1,0 +1,27 @@
+.main {
+  text-align: center;
+}
+
+#textao {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#imagemNoticia {
+  width: 600px;
+  box-shadow: 10px 10px 10px black;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.textoPrincipal {
+  text-align: justify;
+  font-size: 22px;
+}
+
+#player {
+  margin-top: 20px;
+  text-align: center;
+  width: 600px;
+}

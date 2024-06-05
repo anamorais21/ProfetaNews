@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GAMEPASS NEWS</title>
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="assets/noticias.css" />
+    <link rel="stylesheet" href="assets/paginaNoticia.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light nav-collor">
+        <div class="container-fluid">
+          <a class="navbar-brand fs-5 nav-titulo" href="#">Profeta</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse nav justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active fs-5"
+                  aria-current="page"
+                  href="index.html"
+                  >Início</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active fs-5" href="cadastro.html"
+                  >Cadastro</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <article>
+        <p class="titulo">
+          Xbox Game Pass: Jogos adicionados em 2021 somam mais de US$6.300
+        </p>
+        <section id="textao">
+          <img id="imagemNoticia" src="assets/gamepass2.webp" />
+          <p class="textoPrincipal">
+            No ano de 2021, o Xbox Game Pass adicionou jogos em seu serviço que,
+            somados, são referentes a US$6.300 mil dólares (R$20.400 em cotação
+            atual), afirmou um relatório.
+          </p>
+          <p class="textoPrincipal">
+            O relatório veio do site The Loadout, que calculou o valor de cada
+            adição do Xbox Game Pass para PC e console ao longo do ano de 2021
+            e, aparentemente, o valor somado é de exatos US$6.317 — quando
+            somado por meio da lista de jogos da Microsoft.
+          </p>
+          <p class="textoPrincipal">
+            Além disso, o relatório também conseguiu identificar o melhor mês em
+            termos de valor de adição para os usuários do serviço por assinatura
+            da Microsoft, que foi março deste ano, quando foram adicionados um
+            maior número de jogos com maiores valores.
+          </p>
+          <p class="textoPrincipal">
+            Isso se deve graças à compra da Bethesda Game Studios pela Microsoft
+            e as adições somaram — juntas — apenas no mês de março cerca de
+            US$964 dólares.
+          </p>
+          <p class="textoPrincipal">
+            Fazendo uma comparação com o quanto custaria a assinatura do Xbox
+            Game Pass por ano para um jogador, considerando o Ultimate — a
+            versão mais cara e que disponibiliza jogos na nuvem — seria gasto
+            cerca de R$540 por ano, valores em reais, já que a assinatura custa
+            R$44,99 por mês.
+          </p>
+          <p class="textoPrincipal">
+            E, no Brasil, sabemos que esse valor pode comprar de 2 a 3 jogos
+            bons, no máximo. O que é bem diferente quando se pensa em pagar isso
+            em 12 vezes para ter acesso a mais de 100 títulos incríveis,
+            inclusive jogos que chegam no dia 1 no serviço, né?
+          </p>
+        </section>
+      </article>
+
+      <div id="player"></div>
+    </main>
+    <footer id="rodape">
+      <p>
+        Gostou de nosso conteúdo? <br /><a
+          id="botaocadastra"
+          href="cadastro.html"
+          >Clique aqui para se cadastrar</a
+        >
+      </p>
+    </footer>
+
+    <script>
+      // 2. This code loads the IFrame Player API code asynchronously.
+      var tag = document.createElement('script')
+
+      tag.src = 'https://www.youtube.com/iframe_api'
+      var firstScriptTag = document.getElementsByTagName('script')[0]
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag)
+
+      // 3. This function creates an <iframe> (and YouTube player)
+      //    after the API code downloads.
+      var player
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '360',
+          width: '640',
+          videoId: 'scwNIC0aUwY',
+          events: {
+            onReady: onPlayerReady,
+            onStateChange: onPlayerStateChange,
+          },
+        })
+      }
+
+      // 4. The API will call this function when the video player is ready.
+      function onPlayerReady(event) {
+        event.target.playVideo()
+      }
+
+      // 5. The API calls this function when the player's state changes.
+      //    The function indicates that when playing a video (state=1),
+      //    the player should play for six seconds and then stop.
+      var done = false
+      function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+          setTimeout(stopVideo, 6000)
+          done = true
+        }
+      }
+      function stopVideo() {
+        player.stopVideo()
+      }
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

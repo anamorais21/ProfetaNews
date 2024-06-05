@@ -1,0 +1,33 @@
+.noticias {
+  list-style: none;
+  display: inline-block;
+  align-items: center;
+}
+
+.imagemNoticia {
+  width: 165px;
+  height: 118px;
+  padding: 15px 10px 0 10px;
+  object-position: center;
+}
+
+.noticiaCard {
+  box-sizing: border-box;
+  border-bottom: 3px solid grey;
+  padding-bottom: 10px;
+}
+
+.descricao {
+  text-decoration: none;
+  color: black;
+
+  font-size: 30px;
+  display: block;
+  margin-right: 10px;
+  padding-left: 10px;
+}
+
+.descricao:hover {
+  color: black;
+  font-size: 32px;
+}

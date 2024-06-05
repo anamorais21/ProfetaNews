@@ -1,0 +1,114 @@
+#titulo {
+  font-size: 40px;
+  font-family: 'Lato', sans-serif;
+  color: black;
+  margin-bottom: 1rem;
+}
+
+fieldset {
+  border: 0;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 1em;
+  color: black;
+}
+
+button {
+  border-radius: 5px;
+}
+
+.cadastro-cabecalho {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 1rem;
+}
+
+.imagem-cabecalho {
+  opacity: 0.1;
+  width: 60%;
+}
+
+.cartao {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: black;
+  width: 100%;
+  max-width: 45rem;
+  padding: 1.75rem;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+}
+
+.descricao {
+  padding-top: 15px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.input {
+  font-size: 15px;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+  padding: 1.375rem 0.5rem 0.5rem;
+  height: 2.25rem;
+  width: 100%;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.campo {
+  position: relative;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-sizing: border-box;
+}
+
+.campo label {
+  margin-bottom: 0.2em;
+  color: black;
+}
+
+.botao {
+  font-size: 1.2em;
+  background: black;
+  border: 0;
+  margin-bottom: 20px;
+  color: white;
+  padding: 0.2em 0.6em;
+  box-shadow: 2px 2px 2px black;
+  text-shadow: 1px 1px 1px black;
+  position: absolute;
+}
+
+.botao:hover {
+  background: grey;
+  box-shadow: inset 2px 2px 2px white;
+  text-shadow: none;
+}
+
+.container--invalido {
+  margin-bottom: 0.5rem;
+}
+
+.container--invalido label {
+  color: red;
+}
+
+.mensagem-erro {
+  display: none;
+}
+
+.container--invalido .mensagem-erro {
+  color: red;
+  display: block;
+  margin-top: 0.5rem;
+  padding-left: 0.5rem;
+}

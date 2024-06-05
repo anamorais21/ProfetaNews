@@ -1,0 +1,40 @@
+.nav-collor {
+  background-image: linear-gradient(grey, white);
+}
+
+.nav-titulo {
+  font-family: 'Lato', sans-serif;
+}
+
+.cabecalho {
+  text-align: center;
+}
+
+.titulo {
+  font-size: 60px;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+}
+
+#banner {
+  width: 600px;
+  box-shadow: 10px 10px 10px black;
+}
+
+#rodape {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  background-image: linear-gradient(grey, white);
+}
+
+#botaocadastra {
+  color: black;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+#botaocadastra:hover {
+  color: blue;
+  font-size: 22px;
+}
